@@ -1,22 +1,89 @@
-.App {
-  text-align: center;
+.app-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: black; 
+    width: 100%;
+    height: 650px;
 }
 
-.App-logo {
-  height: 40vmin;
+.header-container {
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    display: flex; 
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button-container {
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 15%;
+    font-family: 'Gugi', cursive;
+    display: block;
+    overflow: auto;
+    text-align: center;
+    float: left;
+   }
+
+.header-text {
+    position: relative;
+    font-family: 'Gugi', cursive;
+    font-size: 450%;
+    color: blue;
+    margin-top: 2%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.App-link {
-  color: #09d3ac;
-}
+
+.border-box {
+    padding-left: 20%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: wrap !important; 
+    width: 1200px;
+    height: 375px;
+    border: 4px solid gray;
+    line-height: 200px;
+    float: none;
+    position: absolute !important;
+  }
+  
+  .person-container {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    flex-wrap: wrap !important; 
+    width: 100% !important;
+    height: 100%;
+
+  }
+  
+  .person-container2 {
+      position: sticky;
+      display: flex;
+      justify-content: center !important;
+      align-items: center;
+      flex-direction: column !important;
+      width: 200px !important;
+      height: 60%;
+      font-size: 120%;
+      font-weight: bold;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      border: 2px solid gray;
+      line-height: 20px;
+      float: none;
+
+  }
